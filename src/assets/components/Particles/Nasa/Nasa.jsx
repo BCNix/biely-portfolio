@@ -18,11 +18,20 @@ export default function Nasa() {
 
   return (
     <ParticlesProvider init={particlesInit}>
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "100vh",
+          backgroundColor: "#0D1B2A",
+        }}
+      >
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
+      </div>
     </ParticlesProvider>
   );
 }

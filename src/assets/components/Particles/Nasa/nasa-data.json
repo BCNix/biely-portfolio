@@ -11,7 +11,7 @@
     "paint": {
       "fill": {
         "color": {
-          "value": "#ffffff"
+          "value": "#e4e4e4"
         }
       }
     },
@@ -81,7 +81,6 @@
     }
   },
   "background": {
-    "color": "#0000",
     "image": "url('http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png')",
     "position": "50% 50%",
     "repeat": "no-repeat",

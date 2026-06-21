@@ -1,0 +1,37 @@
+.greeting-overlay {
+  --greetings-bg: #0b131c;
+
+  position: fixed;
+  inset: 0;
+  background: var(--greetings-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.greeting-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.greeting-name {
+  font-size: 200px;
+  font-weight: 900;
+  animation: rise 0.7s ease 0.6s both;
+  text-transform: uppercase;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
