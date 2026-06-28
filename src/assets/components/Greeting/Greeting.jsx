@@ -19,7 +19,7 @@ export default function Greeting() {
 
   return (
     <div className={`greeting-overlay ${fadeOut ? "fade-out" : ""}`}>
-      <h1 className="greeting-name">Biely</h1>
+      <h1 className="greeting-name">Welcome</h1>
     </div>
   );
 }

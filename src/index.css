@@ -18,13 +18,11 @@ html {
   --text-color: #e4e4e4;
 
   background: var(--bg);
-  font-family: var(--sans-serif);
   color: var(--text-color);
+  font-family: var(--sans-serif);
+  font-optical-sizing: auto;
 }
 
 body {
   margin: 0;
-  cursor:
-    url("./assets/icons/cursor.svg") 0 0,
-    default;
 }

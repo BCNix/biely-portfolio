@@ -1,0 +1,27 @@
+.nav {
+  margin: 1.56em auto;
+  width: 298px;
+  height: 48px;
+  background-color: #162534;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-item {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    border-radius: 12px;
+    background-color: #d4af37;
+    svg .icons {
+      fill: #0d1b2a;
+    }
+  }
+}
