@@ -7,8 +7,12 @@ export default function Main() {
   const isHome = pathname === "/";
   return (
     <main className="main-container">
-      <Hero className={!isHome ? "hero-hidden-mobile" : ""} />
-      <Outlet />
+      <div className="main-wrapper">
+        <Hero className={!isHome ? "hero-hidden-mobile" : ""} />
+        <div key={pathname} className="outlet-wrapper">
+          <Outlet />
+        </div>
+      </div>
     </main>
   );
 }

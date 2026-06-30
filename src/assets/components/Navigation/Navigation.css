@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  -webkit-user-drag: none;
 
   &.active {
     border-radius: 12px;
@@ -43,10 +44,16 @@
   transform: translateY(0);
   transition:
     opacity 0.2s ease,
-    transform 0s ease;
+    transform 0.2s ease;
 }
 
 .nav-item:hover .nav-label {
   opacity: 1;
   transform: translateY(32px);
+}
+
+@media (min-width: 1080px) {
+  .nav {
+    margin: 2em auto 5em;
+  }
 }
