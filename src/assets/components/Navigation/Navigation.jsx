@@ -20,6 +20,9 @@ export default function Navigation() {
             className="icons"
           />
         </svg>
+        <span className="nav-label" aria-hidden="true">
+          Home
+        </span>
       </NavLink>
 
       <NavLink
@@ -43,12 +46,15 @@ export default function Navigation() {
             className="icons"
           />
         </svg>
+        <span className="nav-label" aria-hidden="true">
+          Projects
+        </span>
       </NavLink>
 
       <NavLink
-        to="/experiences"
+        to="/experience"
         end
-        aria-label="Experiences page"
+        aria-label="Experience page"
         className="nav-item"
       >
         <svg
@@ -73,9 +79,12 @@ export default function Navigation() {
             className="icons"
           />
         </svg>
+        <span className="nav-label" aria-hidden="true">
+          Experience
+        </span>
       </NavLink>
 
-      <NavLink to="/tools" end aria-label="Tools page" className="nav-item">
+      <NavLink to="/stack" end aria-label="Stack page" className="nav-item">
         <svg
           width="20"
           height="20"
@@ -105,6 +114,9 @@ export default function Navigation() {
             />
           </g>
         </svg>
+        <span className="nav-label" aria-hidden="true">
+          Stack
+        </span>
       </NavLink>
 
       <NavLink
@@ -136,6 +148,9 @@ export default function Navigation() {
             className="icons"
           />
         </svg>
+        <span className="nav-label" aria-hidden="true">
+          Thoughts
+        </span>
       </NavLink>
     </nav>
   );

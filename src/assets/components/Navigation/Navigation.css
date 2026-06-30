@@ -1,5 +1,5 @@
 .nav {
-  margin: 1.56em auto;
+  margin: 1.56em auto 2.5em;
   width: 298px;
   height: 48px;
   background-color: #162534;
@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &.active {
     border-radius: 12px;
@@ -24,4 +25,28 @@
       fill: #0d1b2a;
     }
   }
+}
+
+.nav-label {
+  position: absolute;
+  bottom: 0;
+  background-color: #1e3a4f;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 300;
+  white-space: nowrap;
+  /* hidden by default */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0);
+  transition:
+    opacity 0.2s ease,
+    transform 0s ease;
+}
+
+.nav-item:hover .nav-label {
+  opacity: 1;
+  transform: translateY(32px);
 }
