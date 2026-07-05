@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Nasa from "../src/assets/components/Particles/Nasa/Nasa";
 // import Greeting from "./assets/components/Greeting/Greeting";
 import Layout from "./assets/components/Layout/Layout";
-import Home from "./assets/Pages/Home/Home";
+import Home from "./assets/pages/Home/Home";
 import Projects from "./assets/Pages/Projects/Projects";
 import "./App.css";
 

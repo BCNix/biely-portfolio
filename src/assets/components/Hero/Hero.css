@@ -59,6 +59,7 @@
   object-view-box: inset(0% -5% 20% 0%);
   -webkit-user-drag: none;
 }
+
 .hero-text {
   margin-top: 12px;
 }

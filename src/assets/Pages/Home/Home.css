@@ -1,1 +1,65 @@
+.hero-message {
+  color: #9ea7ad;
+  line-height: 1.3;
+  letter-spacing: 0.03rem;
+  text-align: center;
+  max-width: 500px;
+  margin: 20px auto;
+  font-weight: 300;
+}
 
+.stats-container {
+  color: #9ea7ad;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.stats-item p {
+  margin: 0;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.stats-value {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.stats-label {
+  width: 79px;
+}
+
+@media (min-width: 810px) {
+  .stats-value {
+    font-size: 60px;
+  }
+
+  .stats-label {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .hero-message {
+    text-align: start;
+    margin: 20px 0 40px;
+    font-size: 18px;
+  }
+
+  .stats-container {
+    justify-content: start;
+    gap: 70px;
+  }
+
+  .stats-value {
+    font-size: 70px;
+  }
+}

@@ -1,5 +1,5 @@
 // import github from "../../images/icons/socials/github.svg";
-import bielyPortrait from "../../images/bly-portrait.png";
+import bielyPortrait from "../../images/bly-portrait.webp";
 import topLeftLine from "../../images/portrait-border-lines/top-left-line.png";
 import topRightLine from "../../images/portrait-border-lines/top-right-line.png";
 import bottomLeftLine from "../../images/portrait-border-lines/bottom-left-line.png";

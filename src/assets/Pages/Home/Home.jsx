@@ -5,31 +5,29 @@ export default function Home() {
   return (
     <>
       <div className="home-section">
-        <h1>HOME PAGE</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since 1966, when designers at Letraset and James Mosley, the librarian
-          at St Bride Printing Library in London, took a 1914 Cicero translation
-          and scrambled it to make dummy text for Letraset's Body Type sheets.
-          It has survived not only many decades, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised thanks to these sheets and more recently with desktop
-          publishing software like Aldus PageMaker and Microsoft Word including
-          versions of Lorem Ipsum.
+        <h1 className="primary-heading">
+          Frontend <span className="accent-heading">Developer</span>
+        </h1>
+        <p className="hero-message">
+          Passionate about creating intuitive and engaging user experiences.
+          Coming from a background in tech support, I bring a sharp eye for how
+          real people struggle with technology — and what makes an interface
+          truly click.
         </p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since 1966, when designers at Letraset and James Mosley, the librarian
-          at St Bride Printing Library in London, took a 1914 Cicero translation
-          and scrambled it to make dummy text for Letraset's Body Type sheets.
-          It has survived not only many decades, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised thanks to these sheets and more recently with desktop
-          publishing software like Aldus PageMaker and Microsoft Word including
-          versions of Lorem Ipsum.
-        </p>
+        <div className="stats-container">
+          <div className="stats-item">
+            <p className="stats-value">+5</p>
+            <p className="stats-label">Years in tech</p>
+          </div>
+          <div className="stats-item">
+            <p className="stats-value">+5</p>
+            <p className="stats-label">Core skills</p>
+          </div>
+          <div className="stats-item">
+            <p className="stats-value">+5</p>
+            <p className="stats-label">Project built</p>
+          </div>
+        </div>
       </div>
       <div className="projects-section">
         <Projects />

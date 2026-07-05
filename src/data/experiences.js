@@ -1,0 +1,75 @@
+export const experiences = [
+  {
+    id: 1,
+    company: "Hexagon Multivista",
+    location: "Victoria, BC",
+    startDate: "Aug 2022",
+    endDate: "Present",
+    type: "Full-time",
+    summary:
+      "Provides technical support for IoT camera systems, provisioning and deploying them live on a proprietary web hosting platform.",
+    responsibilities: [
+      "Troubleshoots hardware issues remotely for end users",
+      "Diagnoses and resolves connectivity issues across deployed camera systems over a LAN or WLAN",
+      "Guides customers through device setup and troubleshooting via phone and chat",
+      "Documents recurring issues and contributes to internal knowledge base articles",
+      "Collaborates with engineering teams to escalate and track hardware defects",
+    ],
+    skills: [
+      "Networking",
+      "Troubleshooting",
+      "Customer Support",
+      "Jira Ticketing Systems",
+    ],
+    logoSrc: "",
+  },
+  {
+    id: 2,
+    company: "Microserve",
+    role: "Configuration Technician",
+    location: "Victoria, BC",
+    startDate: "Nov 2021",
+    endDate: "Aug 2022",
+    type: "Full-time",
+    summary:
+      "Configured and troubleshot software applications and network systems, supporting workstation deployments and system performance improvements.",
+    responsibilities: [
+      "Configured and troubleshot software applications and network systems to enhance performance and reduce downtime",
+      "Executed software and peripheral installations across a large user base",
+      "Diagnosed and repaired PC software issues to improve system efficiency",
+    ],
+    skills: [
+      "System Configuration",
+      "Troubleshooting",
+      "Software Installation",
+      "Workstation Deployment",
+      "Networking",
+    ],
+    logoSrc: "",
+  },
+  {
+    id: 3,
+    company: "FiberHome",
+    role: "Senior Technical Engineer",
+    location: "Makati, Philippines",
+    startDate: "Jan 2020",
+    endDate: "Aug 2021",
+    type: "Full-time",
+    summary:
+      "Configured and troubleshot Optical Line Termination (OLT) equipment and FTTH systems, supporting network integration, migration, and firmware interoperability testing.",
+    responsibilities: [
+      "Configured and troubleshot Optical Line Termination (OLT) equipment to enhance FTTH service reliability",
+      "Facilitated integration and migration of OLT systems to improve performance and reduce downtime",
+      "Diagnosed and resolved hardware and software issues on FITSERVER R2200 and R2400 systems",
+      "Led interoperability testing across multiple firmware versions to identify and resolve critical issues",
+    ],
+    skills: [
+      "OLT Configuration",
+      "FTTH",
+      "Network Integration",
+      "Firmware Testing",
+      "Hardware Troubleshooting",
+    ],
+    logoSrc: "",
+  },
+];

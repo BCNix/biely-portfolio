@@ -14,7 +14,7 @@ html {
 
 :root {
   --bg: #0d1b2a;
-  --sans-serif: "Josefin Sans", sans-serif;
+  --sans-serif: "Inter", sans-serif;
   --text-color: #e4e4e4;
 
   background: var(--bg);
@@ -33,6 +33,36 @@ body {
 
 .outlet-wrapper {
   animation: fadeUp 0.6s ease-out 0.2s both;
+}
+
+.primary-heading {
+  font-size: 52px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  line-height: 0.95;
+  color: #fff;
+  & .accent-heading {
+    color: rgb(16, 89, 127, 0.63);
+  }
+}
+
+@media (min-width: 810px) {
+  .primary-heading {
+    font-size: 82px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .primary-heading {
+    text-align: start;
+  }
+}
+
+@media (min-width: 1440px) {
+  .primary-heading {
+    font-size: 96px;
+  }
 }
 
 @keyframes fadeUp {
