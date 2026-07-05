@@ -1,4 +1,4 @@
-import Projects from "../Projects/Projects";
+import Projects from "../Projects/Projects.jsx";
 import "./Home.css";
 
 export default function Home() {
