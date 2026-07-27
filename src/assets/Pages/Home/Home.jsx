@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="home-section">
-        <h1 className="primary-heading">
+        <h1 className="primary-heading style-heading">
           Frontend <span className="accent-heading">Developer</span>
         </h1>
         <p className="hero-message">
@@ -29,9 +29,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="projects-section">
-        <Projects />
-      </div>
+      <Projects />
     </>
   );
 }

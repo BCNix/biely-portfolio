@@ -49,7 +49,7 @@
 
 .nav-item:hover .nav-label {
   opacity: 1;
-  transform: translateY(32px);
+  transform: translateY(35px);
 }
 
 @media (min-width: 1080px) {

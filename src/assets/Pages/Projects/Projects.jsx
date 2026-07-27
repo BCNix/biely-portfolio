@@ -1,29 +1,61 @@
+import { projects } from "../../../data/projects";
+import { NavLink, useLocation } from "react-router";
+import "./Projects.css";
+
 export default function Projects() {
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
+  const projectsEl = projects.map(
+    ({ id, title, shortDescription, thumbnailImgSrc }) => (
+      <NavLink
+        key={id}
+        to={`/projects/${id}`}
+        end
+        aria-label={`${title} page`}
+        className="projects-nav-item"
+      >
+        <img src={thumbnailImgSrc} className="projects-img" />
+
+        <div className="projects-content-container">
+          {isHome ? (
+            <h3 className="projects-subheading">{title}</h3>
+          ) : (
+            <h2 className="projects-subheading">{title}</h2>
+          )}
+          <p>{shortDescription}</p>
+        </div>
+        <svg
+          className="link-icon"
+          width="10pt"
+          height="10pt"
+          version="1.1"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m21.5 2.5h76v76l-19 19v-61.809l-61.809 61.809-14.191-14.27 61.73-61.73h-61.73z"
+            fill="#ffd65b"
+          />
+        </svg>
+      </NavLink>
+    ),
+  );
+
   return (
-    <div className="home-container">
-      <h1>PROJECT PAGE</h1>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since 1966, when designers at Letraset and James Mosley, the librarian
-        at St Bride Printing Library in London, took a 1914 Cicero translation
-        and scrambled it to make dummy text for Letraset's Body Type sheets. It
-        has survived not only many decades, but also the leap into electronic
-        typesetting, remaining essentially unchanged. It was popularised thanks
-        to these sheets and more recently with desktop publishing software like
-        Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
-      </p>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since 1966, when designers at Letraset and James Mosley, the librarian
-        at St Bride Printing Library in London, took a 1914 Cicero translation
-        and scrambled it to make dummy text for Letraset's Body Type sheets. It
-        has survived not only many decades, but also the leap into electronic
-        typesetting, remaining essentially unchanged. It was popularised thanks
-        to these sheets and more recently with desktop publishing software like
-        Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
-      </p>
-    </div>
+    <>
+      <div className="projects-section">
+        {isHome ? (
+          <h2 className="style-heading secondary-heading">
+            Recent <span className="accent-heading">Projects</span>
+          </h2>
+        ) : (
+          <h1 className="style-heading primary-heading">
+            Recent <span className="accent-heading">Projects</span>
+          </h1>
+        )}
+
+        <div className="projects-container">{projectsEl}</div>
+      </div>
+    </>
   );
 }

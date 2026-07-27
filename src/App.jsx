@@ -4,6 +4,7 @@ import Nasa from "../src/assets/components/Particles/Nasa/Nasa";
 import Layout from "./assets/components/Layout/Layout";
 import Home from "./assets/Pages/Home/Home";
 import Projects from "./assets/Pages/Projects/Projects";
+import ProjectsItem from "./assets/components/ProjectsItem/ProjectsItem";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="projects" element={<Projects />} />
           </Route>
+          <Route path="projects/:id" element={<ProjectsItem />} />
         </Routes>
       </BrowserRouter>
     </>
