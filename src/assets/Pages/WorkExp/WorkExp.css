@@ -1,0 +1,50 @@
+.work-exp-item {
+  position: relative;
+  padding: 16px 8px;
+}
+
+.work-exp-item a {
+  text-decoration: none;
+}
+
+.work-exp-subheading {
+  color: #f5f5f5;
+}
+
+.work-exp-item:hover {
+  background-color: #162534;
+  border-radius: 16px;
+}
+
+.work-exp-subheading,
+p {
+  margin: 0;
+}
+
+.work-exp-date-location,
+.work-exp-summary {
+  color: #9ea7ad;
+}
+
+.work-exp-date-location {
+  margin: 8px 0;
+}
+
+.work-exp-summary {
+  max-width: 513px;
+}
+
+.work-exp-link-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: translateX(-5px) translateY(5px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.work-exp-item:hover .work-exp-link-icon,
+.work-exp-item:focus-visible .work-exp-link-icon {
+  transform: translateX(0);
+}
