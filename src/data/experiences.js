@@ -2,13 +2,13 @@ export const experiences = [
   {
     id: 1,
     company: "Hexagon Multivista",
-    role: "Customer Success Manager - GoCapture (0.5 FTE)",
+    role: "Customer Success Manager",
     location: "Victoria, BC",
     startDate: "Apr 2026",
     endDate: "Present",
     type: "Part-time",
     summary:
-      "Guides customers through onboarding, activation, and adoption of GoCapture hardware and software, while developing features for an internal React/TypeScript tool.",
+      "Guides customers through onboarding, activation, and adoption of GoCapture app, while developing features for an internal React/TypeScript tool.",
     responsibilities: [
       "Guides customers from closed-won through onboarding, activation, adoption, and long-term retention as a subject-matter expert across GoCapture hardware, software, and analytics workflows",
       "Runs onboarding kickoffs and remote training sessions, from 1:1s to groups of ~20, on camera hardware, mobile workflows, and best practices for high-quality data capture",
