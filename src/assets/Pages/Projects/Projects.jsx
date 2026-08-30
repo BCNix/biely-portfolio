@@ -1,4 +1,4 @@
-import { projects } from "../../../data/projects";
+import { projects } from "../../../data/index";
 import { NavLink, useLocation } from "react-router";
 import "./Projects.css";
 

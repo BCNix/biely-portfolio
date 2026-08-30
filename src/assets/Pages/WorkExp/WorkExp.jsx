@@ -1,4 +1,4 @@
-import { experiences } from "../../../data/experiences";
+import { experiences } from "../../../data/index";
 import { useLocation } from "react-router";
 import "./WorkExp.css";
 

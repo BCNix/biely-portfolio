@@ -5,6 +5,7 @@ import Layout from "./assets/components/Layout/Layout";
 import Home from "./assets/Pages/Home/Home";
 import Projects from "./assets/Pages/Projects/Projects";
 import WorkExp from "./assets/Pages/WorkExp/WorkExp";
+import TechStack from "./assets/Pages/TechStack/TechStack";
 import ProjectsItem from "./assets/components/ProjectsItem/ProjectsItem";
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="projects" element={<Projects />} />
             <Route path="work-experience" element={<WorkExp />} />
+            <Route path="stack" element={<TechStack />} />
           </Route>
           <Route path="projects/:id" element={<ProjectsItem />} />
         </Routes>

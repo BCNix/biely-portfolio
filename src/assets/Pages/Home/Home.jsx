@@ -1,5 +1,6 @@
 import Projects from "../Projects/Projects";
 import WorkExp from "../WorkExp/WorkExp";
+import TechStack from "../TechStack/TechStack";
 import "./Home.css";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
       </div>
       <Projects />
       <WorkExp />
+      <TechStack />
     </>
   );
 }
