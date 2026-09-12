@@ -14,7 +14,9 @@ export default function TechStack() {
       <ul className="tech-stack-items">
         {items.map(({ id: itemId, icon: Icon, name, description }) => (
           <li key={itemId} className="tech-stack-item">
-            <Icon />
+            <div className="tech-stack-icon-container">
+              <Icon className="tech-stack-icon" />
+            </div>
             <div className="tech-stack-container">
               <HeadingTag className="tech-stack-subheading">{name}</HeadingTag>
               <p>{description}</p>

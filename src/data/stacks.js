@@ -1,5 +1,4 @@
 import {
-  SiHtml5,
   SiJavascript,
   SiTypescript,
   SiPython,
@@ -12,7 +11,7 @@ import {
   SiGithub,
   SiNetlify,
 } from "react-icons/si";
-import { IoLogoCss3 } from "react-icons/io5";
+import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io5";
 import { RiJavaLine } from "react-icons/ri";
 import { VscVscodeInsiders } from "react-icons/vsc";
 
@@ -24,7 +23,7 @@ export const stacks = [
       {
         id: 1,
         name: "HTML",
-        icon: SiHtml5,
+        icon: IoLogoHtml5,
         description: "Semantic markup for structuring web content",
       },
       {
