@@ -8,6 +8,7 @@ import WorkExp from "./assets/Pages/WorkExp/WorkExp";
 import TechStack from "./assets/Pages/TechStack/TechStack";
 import ProjectsItem from "./assets/components/ProjectsItem/ProjectsItem";
 import "./App.css";
+import Contact from "./assets/Pages/Contact/Contact";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="projects" element={<Projects />} />
             <Route path="work-experience" element={<WorkExp />} />
             <Route path="stack" element={<TechStack />} />
+            <Route path="contact" element={<Contact />} />
           </Route>
           <Route path="projects/:id" element={<ProjectsItem />} />
         </Routes>

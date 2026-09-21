@@ -119,12 +119,7 @@ export default function Navigation() {
         </span>
       </NavLink>
 
-      <NavLink
-        to="/thoughts"
-        end
-        aria-label="Thoughts page"
-        className="nav-item"
-      >
+      <NavLink to="/contact" end aria-label="Contact page" className="nav-item">
         <svg
           width="20"
           height="20"
@@ -149,7 +144,7 @@ export default function Navigation() {
           />
         </svg>
         <span className="nav-label" aria-hidden="true">
-          Thoughts
+          Contact
         </span>
       </NavLink>
     </nav>

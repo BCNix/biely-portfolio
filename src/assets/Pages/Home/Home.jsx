@@ -1,6 +1,7 @@
 import Projects from "../Projects/Projects";
 import WorkExp from "../WorkExp/WorkExp";
 import TechStack from "../TechStack/TechStack";
+import Contact from "../Contact/Contact";
 import "./Home.css";
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
       <Projects />
       <WorkExp />
       <TechStack />
+      <Contact />
     </>
   );
 }

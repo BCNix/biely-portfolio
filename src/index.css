@@ -16,6 +16,9 @@ html {
   --bg: #0d1b2a;
   --sans-serif: "Inter", sans-serif;
   --text-color: #e4e4e4;
+  --surface: #26313d;
+  --accent-gold: #d0b14f;
+  --muted-text: #9aa5b1;
 
   background: var(--bg);
   color: var(--text-color);
