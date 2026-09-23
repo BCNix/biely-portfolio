@@ -1,5 +1,6 @@
 import { useLocation } from "react-router";
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import Toast from "../../components/Toast/Toast";
 import "./Contact.css";
 
 export default function Contact() {
@@ -8,6 +9,7 @@ export default function Contact() {
   const Heading = isHome ? "h2" : "h1";
 
   const [status, setStatus] = useState("idle");
+  const closeToast = useCallback(() => setStatus("idle"), []);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -40,6 +42,18 @@ export default function Contact() {
       >
         Get in <span className="accent-heading">Touch</span>
       </Heading>
+
+      {(status === "success" || status === "error") && (
+        <Toast
+          type={status}
+          message={
+            status === "success"
+              ? "Thanks for reaching out. I'll get back to you soon."
+              : "Your message wasn't sent. Please try again."
+          }
+          onClose={closeToast}
+        />
+      )}
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
